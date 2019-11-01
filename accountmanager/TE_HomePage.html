@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<script type="text/javascript" src="home.js"></script>
+	<title>Turn Electronics</title>
+	<!--First line of the header-->
+	<div id="leftAlignHeader">
+		<img src="logo.jpg" align="right">
+		<!--Search bar
+		future maybe
+		<input type="text" placeholder="part# or name. . ."> <p> | </p>
+		-->
+		<!--login/myAccount-->
+		<a href="#">Home</a> <p> | </p>
+		<!--FAQ-->
+		<a href="#">FAQ</a>
+	</div>
+	<!--Company Image-->
+	<div>
+		<img src="main_company_image.jpg">
+	</div>
+	<!--Navigation bar-->
+	<div class="navbar">
+		<button id="home" value="home" onclick="populateProducts()">Home</button>
+		<div class="dropdown">
+		    <button class="repairs_and_upgrades_dropbtn" value="RepairsAndUpgrades" onclick="populateProducts()">Repairs & Upgrades
+		      <i class="fa fa-caret-down"></i>
+		    </button>
+		    <div class="dropdown-content">
+		      <button value="GaugeCluster" onclick="populateProducts()">Gauge Clusters</button>
+		      
+		    </div> <!--END OF DIV CLASS "dropdown-content"-->
+		  </div><!--End of div class "dropdown"-->
+	</div><!--End of div class navbar-->
+	<div class="filterNavBar">
+		<h4>Filter By Make:</h4>
+			<input type="checkbox" value="all">all<p> | </p>
+			<input type="checkbox" value="ford">Ford<p> | </p>
+		
+		<!--
+		<ul id="Makes">
+			<li><input type="checkbox" value="all">All</li>
+			<li><input type="checkbox" value="ford">Ford</li>
+			<li><input type="checkbox" value="ford1">Ford1</li>
+			<li><input type="checkbox" value="ford3">Ford2</li>
+		</ul>
+		-->		
+	</div>
+</head>
+
+<body>
+	
+	<div class="products">
+		
+	</div>
+</body>
+<footer>
+	<div id="aboutUs">
+		<h4>About Us</h4>
+		<ul>
+			<li>Adress: 1900 W Carla Vista Dr, #7291 Chandler AZ 85224-8201</li>
+			<li>Hours: Monday - Friday 9:00am - 5:00pm (MST)</li>
+			<li>Phone: (480)748-3496</li>
+		</ul>
+	</div>
+
+	<div id="shop">
+		<h4>Shop</h4>
+		<ul>
+			<li><a href="#">Repairs</a></li>
+			<li><a href="#">Kits</a></li>
+			<li><a href="#">Auto Parts</a></li>
+		</ul>
+	</div>
+
+	<div id="customerService">
+		<h4>Service</h4>
+		<ul>
+			<li><a href="#">My Account</a></li>
+			<li><a href="#">FAQs</a></li>
+			<li><a href="#">How to Videos</a></li>
+		</ul>
+	</div>
+<!--
+other tried code
+<a href="#">Repairs & Upgrades</a>
+		<div class="dropdown">
+		    <button class="dropbtn">Dropdown
+		      <i class="fa fa-caret-down"></i>
+		    </button>
+		    <div class="dropdown-content">
+		      <a href="#">Link 1</a>
+		      <a href="#">Link 2</a>
+		      <a href="#">Link 3</a>
+		    </div>
+		  </div>
+		<a href="">Auto Parts and Kits</a>
+		<a href="">How To Videos</a>
+-->
+</footer>
+</html>
